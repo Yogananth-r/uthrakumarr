@@ -104,7 +104,7 @@ export default function Home() {
           {menuOpen ? <X /> : <Menu />}
         </button>
         <div className="header-status">
-          <span className="status-dot" /> AVAILABLE FOR SELECT PROJECTS
+          <span className="status-dot" /> SOCIAL MEDIA MANAGER
         </div>
       </header>
 
