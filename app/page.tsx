@@ -391,6 +391,49 @@ export default function Home() {
                   </a>
                 )}
 
+                                  {clients[activeClient].no === "02" && (
+                  <a href="/projects/fc-madras" className="text-link">
+                    EXPLORE PROJECT <ArrowUpRight size={16} />
+                  </a>
+                )}
+
+                                {clients[activeClient].no === "03" && (
+                  <a href="/projects/bharat-rangers" className="text-link">
+                    EXPLORE PROJECT <ArrowUpRight size={16} />
+                  </a>
+                )}
+
+                {clients[activeClient].no === "04" && (
+                  <a href="/projects/srfi" className="text-link">
+                    EXPLORE PROJECT <ArrowUpRight size={16} />
+                  </a>
+                )}
+
+                {clients[activeClient].no === "05" && (
+                  <a href="/projects/roundglass-sports" className="text-link">
+                    EXPLORE PROJECT <ArrowUpRight size={16} />
+                  </a>
+                )}
+
+                  {clients[activeClient].no === "06" && (
+                  <a href="/projects/dindigul-athletics" className="text-link">
+                    EXPLORE PROJECT <ArrowUpRight size={16} />
+                  </a>
+                )}
+
+                {clients[activeClient].no === "07" && (
+                  <a href="/projects/tnpl" className="text-link">
+                    EXPLORE PROJECT <ArrowUpRight size={16} />
+                  </a>
+                )}
+
+                {clients[activeClient].no === "08" && (
+                  <a href="/projects/other-sporting-clients" className="text-link">
+                    EXPLORE PROJECT <ArrowUpRight size={16} />
+                  </a>
+                )}
+
+
                 <div className="carousel-controls">
                   <div className="dots">
                     {clients.map((client, i) => (
@@ -506,7 +549,7 @@ export default function Home() {
 
 
   {/* CASE STUDY 03 - PLACEHOLDER */}
-  <article className="case-card">
+  <article className="case-card case-card--dark">
     <div className="case-top">
       <span>CASE STUDY / 03</span>
       <span>PROJECT PERIOD</span>
