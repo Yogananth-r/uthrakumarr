@@ -17,7 +17,7 @@ export default function BharatArmyProject() {
       <section className="ba-hero">
         <div className="ba-hero-image">
           <Image
-            src="/images/clients/bharat-army.png"
+            src="/images/clients/BA Banner.jpeg"
             alt="The Bharat Army"
             fill
             priority
@@ -71,7 +71,7 @@ export default function BharatArmyProject() {
         <div className="ba-image-gallery">
             <div className="ba-gallery-item">
             <Image
-                src="/images/clients/ba-01.jpg"
+                src="/images/clients/IND CWC23.jpg"
                 alt="Bharat Army project image 1"
                 fill
                 sizes="(max-width: 700px) 45vw, 25vw"
@@ -80,7 +80,7 @@ export default function BharatArmyProject() {
 
             <div className="ba-gallery-item">
             <Image
-                src="/images/clients/ba-02.jpg"
+                src="/images/clients/T20 WC 2024.jpg"
                 alt="Bharat Army project image 2"
                 fill
                 sizes="(max-width: 700px) 45vw, 25vw"
@@ -89,7 +89,7 @@ export default function BharatArmyProject() {
 
             <div className="ba-gallery-item">
             <Image
-                src="/images/clients/ba-03.jpg"
+                src="/images/clients/WTC 2023.jpg"
                 alt="Bharat Army project image 3"
                 fill
                 sizes="(max-width: 700px) 45vw, 25vw"
@@ -98,7 +98,7 @@ export default function BharatArmyProject() {
 
             <div className="ba-gallery-item">
             <Image
-                src="/images/clients/ba-04.jpg"
+                src="/images/clients/poster 4.jpeg"
                 alt="Bharat Army project image 4"
                 fill
                 sizes="(max-width: 700px) 45vw, 25vw"
@@ -165,19 +165,19 @@ export default function BharatArmyProject() {
 
     <div className="ba-responsibility-gallery">
       <div className="ba-gallery-item">
-        <Image src="/images/clients/ba-work-01.jpg" alt="Team leadership" fill sizes="(max-width: 700px) 90vw, 40vw" />
+        <Image src="/images/clients/BA TL 1.jpeg" alt="Team leadership" fill sizes="(max-width: 700px) 90vw, 40vw" />
       </div>
 
       <div className="ba-gallery-item">
-        <Image src="/images/clients/ba-work-02.jpg" alt="Live match coverage" fill sizes="(max-width: 700px) 90vw, 40vw" />
+        <Image src="/images/clients/BA TL 2.png" alt="Live match coverage" fill sizes="(max-width: 700px) 90vw, 40vw" />
       </div>
 
       <div className="ba-gallery-item">
-        <Image src="/images/clients/ba-work-03.jpg" alt="Campaign management" fill sizes="(max-width: 700px) 90vw, 40vw" />
+        <Image src="/images/clients/BA TL 3.png" alt="Campaign management" fill sizes="(max-width: 700px) 90vw, 40vw" />
       </div>
 
       <div className="ba-gallery-item">
-        <Image src="/images/clients/ba-work-04.jpg" alt="Newsletter and travel content" fill sizes="(max-width: 700px) 90vw, 40vw" />
+        <Image src="/images/clients/BA TL 4.png" alt="Newsletter and travel content" fill sizes="(max-width: 700px) 90vw, 40vw" />
       </div>
     </div>
 
@@ -203,7 +203,7 @@ export default function BharatArmyProject() {
     <div className="ba-results-gallery">
       <div className="ba-results-image">
         <Image
-          src="/images/clients/ba-insights-01.png"
+          src="/images/clients/BA Insight 1.png"
           alt="Bharat Army social media campaign insights"
           fill
           sizes="(max-width: 700px) 50vw, 20vw"
@@ -212,7 +212,7 @@ export default function BharatArmyProject() {
 
       <div className="ba-results-image">
         <Image
-          src="/images/clients/ba-insights-02.png"
+          src="/images/clients/BA Insight 2.png"
           alt="Bharat Army social media performance analytics"
           fill
           sizes="(max-width: 700px) 50vw, 20vw"

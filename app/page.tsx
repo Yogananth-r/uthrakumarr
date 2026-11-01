@@ -370,8 +370,7 @@ export default function Home() {
                     sizes="(max-width: 640px) 90vw, 35vw"
                     className="client-image-photo"
                   />
-                  <span className="client-image-label">MY WORK</span>
-                </div>
+                  </div>
 
                 <span>{clients[activeClient].type}</span>
               </div>
@@ -642,9 +641,16 @@ export default function Home() {
       <div className="timeline-meta">
         <div className="timeline-date">NOV 2020 — AUG 2022</div>
 
-        <div className="timeline-logo">
-          <span>COMPANY LOGO / 01</span>
-        </div>
+<div className="timeline-logo">
+  <span>
+    <Image
+      src="/images/Cognizant-Logo.jpg"
+      alt="Cognizant Logo"
+      width={120}
+      height={60}
+    />
+  </span>
+</div>
       </div>
 
       <div className="timeline-content">
@@ -669,8 +675,15 @@ export default function Home() {
         <div className="timeline-date">AUG 2022 — MAR 2023</div>
 
         <div className="timeline-logo">
-          <span>COMPANY LOGO / 02</span>
-        </div>
+  <span>
+    <Image
+      src="/images/tdf.jpeg"
+      alt="Tiny Dot Foods Logo"
+      width={120}
+      height={60}
+    />
+  </span>
+</div>
       </div>
 
       <div className="timeline-content">
@@ -695,7 +708,12 @@ export default function Home() {
         <div className="timeline-date">MAR 2023 — OCT 2026</div>
 
         <div className="timeline-logo">
-          <span>COMPANY LOGO / 03</span>
+          <Image
+      src="/images/SW.png"
+      alt="Sportwalk Logo"
+      width={120}
+      height={60}
+    />
         </div>
       </div>
 

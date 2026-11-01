@@ -97,7 +97,7 @@
 
 
 
-.client-image {
+/* .client-image {
   position: relative;
   width: 100%;
   height: 185px;
@@ -123,6 +123,42 @@
   letter-spacing: 0.1em;
   color: #fff;
   text-shadow: 0 1px 5px #000;
+}
+
+@media (max-width: 640px) {
+  .client-image {
+    height: 180px;
+  }
+} */
+
+.client-image {
+  position: relative;
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+  background: #e8e7df;
+}
+
+.client-image-photo {
+  object-fit: contain;
+  padding: 0;
+  transform: scale(1.35);
+  transition: transform 0.5s ease;
+}
+
+.client-card:hover .client-image-photo {
+  transform: scale(1.42);
+}
+
+.client-image-label {
+  position: absolute;
+  z-index: 2;
+  left: 18px;
+  bottom: 18px;
+  font: 12px var(--mono);
+  letter-spacing: 0.12em;
+  color: #222;
+  text-shadow: none;
 }
 
 @media (max-width: 640px) {
@@ -467,28 +503,36 @@
 
 .ba-image-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+  width: 100%;
 }
 
 .ba-gallery-item {
   position: relative;
-  aspect-ratio: 4 / 3;
+  width: 100%;
+  min-height: 350px;
   overflow: hidden;
   background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ba-gallery-item img {
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
   filter: grayscale(100%);
   transition: transform .5s ease, filter .5s ease;
 }
 
 .ba-gallery-item:hover img {
-  transform: scale(1.04);
+  transform: scale(1.02);
   filter: grayscale(0%);
 }
-
 
 .ba-stat-grid {
   display: grid;
@@ -1013,34 +1057,43 @@
   border: 1px solid #444;
 }
 
+.timeline-logo {
+  width: 300px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.timeline-logo span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 .timeline-logo img {
+  width: 220px !important;
+  height: 130px !important;
   object-fit: contain;
-  padding: 18px;
+  padding: 0;
 }
 
 /* MOBILE */
 @media (max-width: 640px) {
-  .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 22px;
-    padding: 25px 0;
-  }
-
-  .timeline-side {
-    min-height: auto;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-  }
-
   .timeline-logo {
     width: 100px;
     height: 75px;
     flex-shrink: 0;
   }
-}
 
-/* EXPERIENCE LOGO - VERTICAL CENTER ALIGNMENT */
+  .timeline-logo img {
+    width: 90px !important;
+    height: 65px !important;
+  }
+}/* EXPERIENCE LOGO - VERTICAL CENTER ALIGNMENT */
 
 .timeline > article {
   align-items: stretch;
