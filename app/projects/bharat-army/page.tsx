@@ -98,7 +98,7 @@ export default function BharatArmyProject() {
 
             <div className="ba-gallery-item">
             <Image
-                src="/images/clients/poster 4.jpeg"
+                src="/images/clients/Poster 4.jpeg"
                 alt="Bharat Army project image 4"
                 fill
                 sizes="(max-width: 700px) 45vw, 25vw"
