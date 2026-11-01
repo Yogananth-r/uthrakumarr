@@ -7,14 +7,14 @@ import Image from 'next/image';
 import { ArrowDownRight, ArrowLeft, ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
 
 const clients = [
-  { no: '01', name: 'THE BHARAT ARMY', image: "/images/clients/bharat-army.png", role: 'PROJECT LEAD', type: 'CRICKET · FAN COMMUNITY', desc: 'Led a cross-functional team of seven across social, design and video. Oversaw match-day publishing, campaigns, client communication, Bharat Army Travel content, and 50+ newsletter editions.', tags: ['Project leadership', 'Live match coverage', 'Brand campaigns', 'Newsletters'] },
-  { no: '02', name: 'FC MADRAS',image: "/images/clients/bharat-army.png", role: 'SOCIAL MEDIA MANAGER', type: 'FOOTBALL · ACADEMY', desc: 'Built football-focused storytelling around academy activities, player development and club milestones, with live coverage across AIFF Elite, Junior and Sub-Junior League campaigns.', tags: ['Social strategy', 'Live coverage', 'Football storytelling'] },
-  { no: '03', name: 'BHARAT RANGERS',image: "/images/clients/bharat-army.png", role: 'SOCIAL MEDIA MANAGER · ON-GROUND', type: 'CRICKET · VPL SEASON 2', desc: 'Delivered stadium-side match coverage, coordinated photo and video crews, and created player-led content and campaign assets during the team’s runners-up campaign.', tags: ['On-ground production', 'Match-day content', 'Brand collaborations'] },
-  { no: '04', name: 'SQUASH RACKETS FEDERATION OF INDIA', image: "/images/clients/bharat-army.png",role: 'SOCIAL MEDIA MANAGER · ON-GROUND', type: 'SQUASH · SDAT SQUASH WORLD CUP 2025', desc: 'Covered India’s title-winning Squash World Cup campaign, created player content with international athletes, and managed ongoing digital communication and tournament coverage.', tags: ['Tournament coverage', 'Player interviews', 'Social strategy'] },
-  { no: '05', name: 'ROUNDGLASS SPORTS', role: 'SOCIAL MEDIA MANAGER',image: "/images/clients/bharat-army.png", type: 'MULTI-SPORT · PUNJAB HOCKEY LEAGUE', desc: 'Managed sports storytelling and live event content across athlete and league initiatives, including match updates, brand activity and on-ground coordination for Punjab Hockey League 2025.', tags: ['Athlete storytelling', 'Live coverage', 'Event execution'] },
-  { no: '06', name: 'DINDIGUL DISTRICT ATHLETIC ASSOCIATION',image: "/images/clients/bharat-army.png", role: 'SOCIAL MEDIA MANAGER · ON-GROUND', type: 'ATHLETICS · 2026 CHAMPIONSHIP', desc: 'Led pre-event, live-event and post-event social coverage for the 40th Tamil Nadu Inter-District Junior Athletic Championship, coordinating content and event branding.', tags: ['Event coverage', 'Reels & highlights', '17K+ followers in 10 days'] },
-  { no: '07', name: 'TNPL', role: 'SOCIAL MEDIA MANAGEMENT',image: "/images/clients/bharat-army.png", type: 'NELLAl ROYAL KINGS · TRICHY GRAND CHOLAS', desc: 'Managed social media strategy, content planning and creative execution, including live match coverage, real-time updates and original content tailored to each team’s identity.', tags: ['Team identity', 'Live match coverage', 'Fan engagement'] },
-  { no: '08', name: 'OTHER SPORTING CLIENTS',image: "/images/clients/bharat-army.png", role: 'SOCIAL MEDIA & CONTENT', type: 'MULTIPLE TEAMS & BRANDS', desc: 'Managed strategy, content planning and creative execution for The Performance Doctor, Hyderabad Vikings, Dilli Dilwale, Fantasy Akhada, Chennai Smashers and Ruby White Town Legends.', tags: ['Content planning', 'Original content IPs', 'Tournament execution'] },
+  { no: '01', name: 'THE BHARAT ARMY', image: "/images/clients/SW x BA (1).png", role: 'PROJECT LEAD', type: 'CRICKET · FAN COMMUNITY', desc: 'Led a cross-functional team of seven across social, design and video. Oversaw match-day publishing, campaigns, client communication, Bharat Army Travel content, and 50+ newsletter editions.', tags: ['Project leadership', 'Live match coverage', 'Brand campaigns', 'Newsletters'] },
+  { no: '02', name: 'FC MADRAS',image: "/images/clients/SW x FCM.png", role: 'SOCIAL MEDIA MANAGER', type: 'FOOTBALL · ACADEMY', desc: 'Developed football-focused storytelling around academy activities, player development, and club milestones, while delivering live coverage of AIFF Elite, Junior and Sub-Junior League campaigns, alongside other grassroots and football development programmes.', tags: ['Social strategy', 'Live coverage', 'Football storytelling'] },
+  { no: '03', name: 'BHARAT RANGERS',image: "/images/clients/SW x BR.png", role: 'SOCIAL MEDIA MANAGER · ON-GROUND', type: 'CRICKET · VPL SEASON 2', desc: 'Delivered stadium-side match coverage, coordinated photo and video crews, managed sponsor integrations and campaign deliverables, and developed player-led content throughout the team’s runners-up campaign.', tags: ['On-ground production', 'Match-day content', 'Brand collaborations'] },
+  { no: '04', name: 'SQUASH RACKETS FEDERATION OF INDIA', image: "/images/clients/SW x SRFI.png",role: 'SOCIAL MEDIA MANAGER · ON-GROUND', type: 'SQUASH · SDAT SQUASH WORLD CUP 2025', desc: 'Covered India’s title-winning Squash World Cup campaign, produced player-led content featuring international athletes, and managed the federation’s social media presence and digital communications.', tags: ['Tournament coverage', 'Player interviews', 'Social strategy'] },
+  { no: '05', name: 'ROUNDGLASS SPORTS', role: 'SOCIAL MEDIA MANAGER',image: "/images/clients/SW x RGS.png", type: 'MULTI-SPORT · PUNJAB HOCKEY LEAGUE', desc: 'Managed sports storytelling and live event content across athlete and league initiatives, including match updates, brand activity and on-ground coordination for Punjab Hockey League 2025.', tags: ['Athlete storytelling', 'Live coverage', 'Event execution'] },
+  { no: '06', name: 'DINDIGUL DISTRICT ATHLETIC ASSOCIATION',image: "/images/clients/SWxDDAA.png", role: 'SOCIAL MEDIA MANAGER · ON-GROUND', type: 'ATHLETICS · 2026 CHAMPIONSHIP', desc: 'Led pre-event, live-event, and post-event social media coverage for the 40th Tamil Nadu Inter-District Junior Athletic Championship 2026, coordinating on-ground content production, event branding, and campaign deliverables.', tags: ['Event coverage', 'Reels & highlights', '17K+ followers in 10 days'] },
+  { no: '07', name: 'TNPL', role: 'SOCIAL MEDIA MANAGEMENT',image: "/images/clients/SW x TNPL.png", type: 'NELLAl ROYAL KINGS · TRICHY GRAND CHOLAS', desc: 'Managed social media strategy, content planning, and creative execution, overseeing live match coverage, real-time updates, and team-specific content initiatives, including original player-led content IPs that strengthened each team’s identity and fan engagement.', tags: ['Team identity', 'Live match coverage', 'Fan engagement'] },
+  { no: '08', name: 'OTHER SPORTING CLIENTS',image: "/images/clients/SW.png", role: 'SOCIAL MEDIA & CONTENT', type: 'MULTIPLE TEAMS & BRANDS', desc: 'Managed strategy, content planning and creative execution for The Performance Doctor, Hyderabad Vikings, Dilli Dilwale, Fantasy Akhada, Chennai Smashers and Ruby White Town Legends.', tags: ['Content planning', 'Original content IPs', 'Tournament execution'] },
 ];
 
 const campaigns = [
@@ -212,26 +212,28 @@ export default function Home() {
             </h2>
             <div className="intro-copy">
               <p className="lead">
-                I’m a social media professional with 5+ years of experience in
-                social media strategy, account management, content development,
-                and campaign execution.
+                My professional journey began in the world of technology,
+                where I built a foundation in technical operations, problem-solving,
+                and analytical thinking. Over time, my interest in creativity, communication,
+                and digital platforms led me to transition into the world of social media,
+                turning a technical background into a career driven by ideas, strategy, and storytelling.
               </p>
               <p>
-                My experience spans sports, entertainment, travel, lifestyle,
-                and regional marketing, working across client-facing and
-                in-house projects. I’ve worked on brand partnerships, digital
-                campaigns, content strategies, and audience engagement
-                initiatives that bring brands closer to their communities.
+               With 5+ years of experience in social media strategy, account management,
+               content development, and campaign execution, I have worked across sports,
+               entertainment, travel, lifestyle, and regional marketing, handling both
+               client-facing and in-house projects.
               </p>
               <p>
-                Beyond content creation, I bring experience in managing client
-                relationships, coordinating creative teams, planning content
-                calendars, and overseeing execution from brief to delivery.
+                Beyond content creation, I bring experience in managing client relationships,
+                leading and coordinating creative teams, developing content calendars,
+                and overseeing campaigns from brief to delivery. My work also involves brand partnerships,
+                digital campaigns, and audience engagement initiatives.
               </p>
               <p>
-                My approach combines strategic thinking, creative storytelling,
-                and performance insights to build meaningful digital experiences
-                and help brands grow.
+                Today, I combine the analytical mindset of a tech professional with the creative thinking
+                of a social media strategist to build meaningful digital experiences, strengthen brand connections,
+                and drive growth.
               </p>
             </div>
           </div>
