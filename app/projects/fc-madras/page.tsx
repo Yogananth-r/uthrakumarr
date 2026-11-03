@@ -191,7 +191,7 @@ export default function FCMadrasProject() {
         </div>
 
         <div className="fm-work-gallery">
-  <div className="fm-image-placeholder">
+  <div className="fm-work-item">
     <Image
       src="/images/clients/fcm/fcm-05.jpeg"
       alt="FC Madras Match Coverage 01"
@@ -200,7 +200,7 @@ export default function FCMadrasProject() {
     />
   </div>
 
-  <div className="fm-image-placeholder">
+  <div className="fm-work-item">
     <Image
       src="/images/clients/fcm/fcm-06.jpeg"
       alt="FC Madras Match Coverage 02"
@@ -209,7 +209,7 @@ export default function FCMadrasProject() {
     />
   </div>
 
-  <div className="fm-image-placeholder">
+  <div className="fm-work-item">
     <Image
       src="/images/clients/fcm/fcm-07.jpeg"
       alt="FC Madras Match Coverage 03"
@@ -218,7 +218,7 @@ export default function FCMadrasProject() {
     />
   </div>
 
-  <div className="fm-image-placeholder">
+  <div className="fm-work-item">
     <Image
       src="/images/clients/fcm/fcm-08.jpeg"
       alt="FC Madras Match Coverage 04"
