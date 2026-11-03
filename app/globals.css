@@ -1230,7 +1230,9 @@
 }
 
 .fm-hero-image {
+  position: relative;
   min-height: 420px;
+  overflow: hidden;
   background: repeating-linear-gradient(
     135deg,
     transparent,
@@ -1244,13 +1246,18 @@
   padding: 18px;
 }
 
-.fm-hero-image span,
-.fm-image-placeholder span {
-  font: 9px var(--mono);
-  letter-spacing: .1em;
-  color: var(--muted);
+.fm-hero-photo {
+  object-fit: cover;
 }
 
+.fm-hero-image span {
+  position: relative;
+  z-index: 2;
+  font: 9px var(--mono);
+  letter-spacing: .1em;
+  color: #fff;
+  text-shadow: 0 1px 5px #000;
+}
 /* OVERVIEW */
 
 .fm-overview,
@@ -1296,38 +1303,51 @@
   line-height: 1.65;
   margin-bottom: 25px;
 }
-
 .fm-overview-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
 .fm-image-placeholder {
   position: relative;
-  min-width: 0;
-  min-height: 180px;
+  width: 100%;
   aspect-ratio: 4 / 3;
+  min-width: 0;
   overflow: hidden;
-  background: repeating-linear-gradient(
-    135deg,
-    transparent,
-    transparent 12px,
-    rgba(128,128,128,.12) 12px,
-    rgba(128,128,128,.12) 13px
-  );
-  border: 1px solid var(--line);
-  display: flex;
-  align-items: flex-end;
-  padding: 13px;
+  border: none;
+  background: transparent;
+  padding: 0;
 }
 
-.fm-image-tall {
-  grid-row: span 2;
-  aspect-ratio: auto;
+.fm-gallery-photo {
+  object-fit: contain !important;
+  padding: 0;
+  filter: grayscale(100%);
+  transition: filter .5s ease, transform .5s ease;
 }
 
-/* WHAT I LED */
+.fm-image-placeholder:hover .fm-gallery-photo {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+.fm-image-placeholder span {
+  position: absolute;
+  z-index: 2;
+  left: 12px;
+  bottom: 12px;
+  font: 9px var(--mono);
+  letter-spacing: .1em;
+  color: #fff;
+  text-shadow: 0 1px 5px #000;
+}
+
+@media (max-width: 640px) {
+  .fm-overview-gallery {
+    gap: 8px;
+  }
+}/* WHAT I LED */
 
 .fm-led-heading,
 .fm-results-heading {
@@ -1386,9 +1406,30 @@
 
 .fm-work-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin-top: 55px;
+}
+
+.fm-work-gallery .fm-image-placeholder {
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+}
+
+.fm-gallery-photo {
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.fm-image-placeholder:hover .fm-gallery-photo {
+  transform: scale(1.04);
+}
+
+@media (max-width: 640px) {
+  .fm-work-gallery {
+    gap: 8px;
+    margin-top: 30px;
+  }
 }
 
 /* CAMPAIGN PERFORMANCE */

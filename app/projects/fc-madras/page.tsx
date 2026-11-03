@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function FCMadrasProject() {
   return (
@@ -47,8 +48,16 @@ export default function FCMadrasProject() {
         </div>
 
         <div className="fm-hero-image">
-          <span>FC MADRAS / PROJECT VISUAL</span>
-        </div>
+  <Image
+    src="/images/clients/fcm/FC Madras Banner 1.jpeg"
+    alt="FC Madras Banner"
+    fill
+    priority
+    sizes="100vw"
+    className="fm-hero-photo"
+  />
+  <span>FC MADRAS / PROJECT VISUAL</span>
+</div>
       </section>
 
 
@@ -88,17 +97,23 @@ export default function FCMadrasProject() {
             </p>
           </div>
 
-          <div className="fm-overview-gallery">
-            <div className="fm-image-placeholder fm-image-tall">
-              <span>FC MADRAS / 01</span>
-            </div>
-            <div className="fm-image-placeholder">
-              <span>FC MADRAS / 02</span>
-            </div>
-            <div className="fm-image-placeholder">
-              <span>FC MADRAS / 03</span>
-            </div>
-          </div>
+<div className="fm-overview-gallery">
+  <div className="fm-image-placeholder">
+    <Image src="/images/clients/fcm/fcm-01.jpeg" alt="FC Madras 01" fill className="fm-gallery-photo" />
+  </div>
+
+  <div className="fm-image-placeholder">
+    <Image src="/images/clients/fcm/fcm-02.jpeg" alt="FC Madras 02" fill className="fm-gallery-photo" />
+  </div>
+
+  <div className="fm-image-placeholder">
+    <Image src="/images/clients/fcm/fcm-03.jpeg" alt="FC Madras 03" fill className="fm-gallery-photo" />
+  </div>
+
+  <div className="fm-image-placeholder">
+    <Image src="/images/clients/fcm/fcm-04.jpeg" alt="FC Madras 04" fill className="fm-gallery-photo" />
+  </div>
+</div>
         </div>
       </section>
 
@@ -176,19 +191,42 @@ export default function FCMadrasProject() {
         </div>
 
         <div className="fm-work-gallery">
-          <div className="fm-image-placeholder">
-            <span>MATCH COVERAGE / 01</span>
-          </div>
-          <div className="fm-image-placeholder">
-            <span>MATCH COVERAGE / 02</span>
-          </div>
-          <div className="fm-image-placeholder">
-            <span>MATCH COVERAGE / 03</span>
-          </div>
-          <div className="fm-image-placeholder">
-            <span>MATCH COVERAGE / 04</span>
-          </div>
-        </div>
+  <div className="fm-image-placeholder">
+    <Image
+      src="/images/clients/fcm/fcm-05.jpeg"
+      alt="FC Madras Match Coverage 01"
+      fill
+      className="fm-gallery-photo"
+    />
+  </div>
+
+  <div className="fm-image-placeholder">
+    <Image
+      src="/images/clients/fcm/fcm-06.jpeg"
+      alt="FC Madras Match Coverage 02"
+      fill
+      className="fm-gallery-photo"
+    />
+  </div>
+
+  <div className="fm-image-placeholder">
+    <Image
+      src="/images/clients/fcm/fcm-07.jpeg"
+      alt="FC Madras Match Coverage 03"
+      fill
+      className="fm-gallery-photo"
+    />
+  </div>
+
+  <div className="fm-image-placeholder">
+    <Image
+      src="/images/clients/fcm/fcm-08.jpeg"
+      alt="FC Madras Match Coverage 04"
+      fill
+      className="fm-gallery-photo"
+    />
+  </div>
+</div>
       </section>
 
 
@@ -232,13 +270,24 @@ export default function FCMadrasProject() {
         </div>
 
         <div className="fm-results-gallery">
-          <div className="fm-image-placeholder">
-            <span>PERFORMANCE INSIGHTS / 01</span>
-          </div>
-          <div className="fm-image-placeholder">
-            <span>PERFORMANCE INSIGHTS / 02</span>
-          </div>
-        </div>
+  <div className="fm-image-placeholder">
+    <Image
+      src="/images/clients/fcm/fcm-09.jpeg"
+      alt="FC Madras Performance Insights 01"
+      fill
+      className="fm-gallery-photo"
+    />
+  </div>
+
+  <div className="fm-image-placeholder">
+    <Image
+      src="/images/clients/fcm/fcm-10.jpeg"
+      alt="FC Madras Performance Insights 02"
+      fill
+      className="fm-gallery-photo"
+    />
+  </div>
+</div>
       </section>
 
 
