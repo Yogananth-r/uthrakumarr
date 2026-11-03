@@ -165,7 +165,7 @@ export default function BharatArmyProject() {
 
     <div className="ba-responsibility-gallery">
       <div className="ba-gallery-item">
-        <Image src="/images/clients/BA TL 1.jpeg" alt="Team leadership" fill sizes="(max-width: 700px) 90vw, 40vw" />
+        <Image src="/images/clients/BA TL 1.png" alt="Team leadership" fill sizes="(max-width: 700px) 90vw, 40vw" />
       </div>
 
       <div className="ba-gallery-item">
