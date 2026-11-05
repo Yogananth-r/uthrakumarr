@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 
@@ -17,9 +17,7 @@ export default function SRFIProject() {
 
         <div className="srfi-hero-content">
           <div>
-            <span className="srfi-eyebrow">
-              SRFI / INDIAN SQUASH
-            </span>
+            <span className="srfi-eyebrow">SRFI / INDIAN SQUASH</span>
 
             <h1>
               Beyond the
@@ -55,10 +53,17 @@ export default function SRFIProject() {
         </div>
 
         <div className="srfi-hero-image">
+          <Image
+            src="/images/clients/srfi/srfi1.jpeg"
+            alt="SRFI Squash World Cup"
+            fill
+            priority
+            sizes="100vw"
+            className="srfi-photo"
+          />
           <span>SRFI / PROJECT VISUAL</span>
         </div>
       </section>
-
 
       {/* 01 / OVERVIEW */}
       <section className="srfi-overview section-pad">
@@ -106,18 +111,40 @@ export default function SRFIProject() {
 
           <div className="srfi-overview-gallery">
             <div className="srfi-image-placeholder srfi-image-tall">
+              <Image
+                src="/images/clients/srfi/srfi2.jpeg"
+                alt="SRFI tournament coverage"
+                fill
+                sizes="(max-width: 900px) 100vw, 50vw"
+                className="srfi-photo"
+              />
               <span>SRFI / 01</span>
             </div>
+
             <div className="srfi-image-placeholder">
+              <Image
+                src="/images/clients/srfi/srfi3.jpeg"
+                alt="Squash World Cup moments"
+                fill
+                sizes="(max-width: 900px) 50vw, 25vw"
+                className="srfi-photo"
+              />
               <span>SRFI / 02</span>
             </div>
+
             <div className="srfi-image-placeholder">
+              <Image
+                src="/images/clients/srfi/srfi4.jpeg"
+                alt="SRFI player coverage"
+                fill
+                sizes="(max-width: 900px) 50vw, 25vw"
+                className="srfi-photo"
+              />
               <span>SRFI / 03</span>
             </div>
           </div>
         </div>
       </section>
-
 
       {/* 02 / WHAT I LED */}
       <section className="srfi-led section-pad">
@@ -141,7 +168,6 @@ export default function SRFIProject() {
         </div>
 
         <div className="srfi-led-grid">
-
           <article className="srfi-led-item">
             <span>01</span>
             <h3>Live Tournament Coverage</h3>
@@ -201,25 +227,28 @@ export default function SRFIProject() {
               publishing and audience engagement.
             </p>
           </article>
-
         </div>
 
         <div className="srfi-work-gallery">
-          <div className="srfi-image-placeholder">
-            <span>WORLD CUP / 01</span>
-          </div>
-          <div className="srfi-image-placeholder">
-            <span>PLAYER INTERACTIONS / 02</span>
-          </div>
-          <div className="srfi-image-placeholder">
-            <span>LIVE MATCH COVERAGE / 03</span>
-          </div>
-          <div className="srfi-image-placeholder">
-            <span>TOURNAMENT COVERAGE / 04</span>
-          </div>
+          {[
+            { src: "srfi5.jpeg", alt: "Squash World Cup coverage", label: "WORLD CUP / 01" },
+            { src: "srfi6.jpeg", alt: "International player interactions", label: "PLAYER INTERACTIONS / 02" },
+            { src: "srfi7.jpeg", alt: "Live squash match coverage", label: "LIVE MATCH COVERAGE / 03" },
+            { src: "srfi8.jpeg", alt: "Squash tournament coverage", label: "TOURNAMENT COVERAGE / 04" },
+          ].map((item) => (
+            <div className="srfi-image-placeholder" key={item.src}>
+              <Image
+                src={`/images/clients/srfi/${item.src}`}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 900px) 50vw, 25vw"
+                className="srfi-photo"
+              />
+              <span>{item.label}</span>
+            </div>
+          ))}
         </div>
       </section>
-
 
       {/* 03 / CAMPAIGN PERFORMANCE */}
       <section className="srfi-results section-pad">
@@ -263,14 +292,28 @@ export default function SRFIProject() {
 
         <div className="srfi-results-gallery">
           <div className="srfi-image-placeholder">
+            <Image
+              src="/images/clients/srfi/srfi9.jpeg"
+              alt="SRFI campaign insights"
+              fill
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="srfi-photo"
+            />
             <span>CAMPAIGN INSIGHTS / 01</span>
           </div>
+
           <div className="srfi-image-placeholder">
+            <Image
+              src="/images/clients/srfi/srfi10.jpeg"
+              alt="SRFI performance analytics"
+              fill
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="srfi-photo"
+            />
             <span>PERFORMANCE ANALYTICS / 02</span>
           </div>
         </div>
       </section>
-
 
       {/* PROJECT FOOTER */}
       <footer className="srfi-footer section-pad">

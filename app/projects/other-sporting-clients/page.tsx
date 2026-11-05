@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const clients = [
   { no: "01", name: "The Performance Doctor" },
@@ -49,7 +53,30 @@ const contributions = [
   },
 ];
 
+const bannerImages = [
+  "/images/clients/other-sporting-clients/osc1.jpg",
+  "/images/clients/other-sporting-clients/osc2.jpg",
+  "/images/clients/other-sporting-clients/osc3.jpg",
+  "/images/clients/other-sporting-clients/osc4.jpg",
+  "/images/clients/other-sporting-clients/osc5.jpg",
+  "/images/clients/other-sporting-clients/osc6.jpg",
+];
+
 export default function OtherSportingClients() {
+  const [activeImage, setActiveImage] = useState(0);
+
+  const previousImage = () => {
+    setActiveImage((current) =>
+      current === 0 ? bannerImages.length - 1 : current - 1
+    );
+  };
+
+  const nextImage = () => {
+    setActiveImage((current) =>
+      current === bannerImages.length - 1 ? 0 : current + 1
+    );
+  };
+
   return (
     <main className="osc-project">
 
@@ -99,9 +126,64 @@ export default function OtherSportingClients() {
           </div>
         </div>
 
+        {/* IMAGE CAROUSEL */}
         <div className="osc-hero-banner">
-          <span>SPORTING STORIES / DIGITAL EXPERIENCES</span>
-          <span>01 — 06</span>
+          <div className="osc-banner-track">
+            {bannerImages.map((image, index) => (
+              <div
+                className={`osc-banner-slide ${
+                  activeImage === index ? "active" : ""
+                }`}
+                key={image}
+              >
+                <Image
+                  src={image}
+                  alt={`Other sporting clients project image ${index + 1}`}
+                  fill
+                  priority={index === 0}
+                  sizes="(max-width: 768px) 100vw, 90vw"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="osc-banner-overlay">
+            <span>SPORTING STORIES / DIGITAL EXPERIENCES</span>
+
+            <div className="osc-banner-controls">
+              <span className="osc-banner-count">
+                {String(activeImage + 1).padStart(2, "0")} / 06
+              </span>
+
+              <button
+                type="button"
+                onClick={previousImage}
+                aria-label="Previous image"
+              >
+                <ChevronLeft size={18} />
+              </button>
+
+              <button
+                type="button"
+                onClick={nextImage}
+                aria-label="Next image"
+              >
+                <ChevronRight size={18} />
+              </button>
+            </div>
+          </div>
+
+          <div className="osc-banner-pagination">
+            {bannerImages.map((image, index) => (
+              <button
+                key={image}
+                type="button"
+                className={activeImage === index ? "active" : ""}
+                onClick={() => setActiveImage(index)}
+                aria-label={`Go to image ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 

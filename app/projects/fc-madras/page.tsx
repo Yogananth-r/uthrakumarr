@@ -56,7 +56,6 @@ export default function FCMadrasProject() {
     sizes="100vw"
     className="fm-hero-photo"
   />
-  <span>FC MADRAS / PROJECT VISUAL</span>
 </div>
       </section>
 

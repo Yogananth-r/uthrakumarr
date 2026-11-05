@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 
@@ -54,10 +54,17 @@ export default function RoundglassSportsProject() {
         </div>
 
         <div className="rg-hero-image">
+          <Image
+            src="/images/clients/roundglass/rg1.jpeg"
+            alt="Roundglass Sports project"
+            fill
+            priority
+            sizes="100vw"
+            className="rg-photo"
+          />
           <span>ROUNDGLASS SPORTS / PROJECT VISUAL</span>
         </div>
       </section>
-
 
       {/* 01 / OVERVIEW */}
       <section className="rg-overview section-pad">
@@ -102,12 +109,35 @@ export default function RoundglassSportsProject() {
 
           <div className="rg-overview-gallery">
             <div className="rg-image-placeholder rg-image-tall">
+              <Image
+                src="/images/clients/roundglass/rg2.jpeg"
+                alt="Roundglass Sports coverage"
+                fill
+                sizes="(max-width: 900px) 100vw, 50vw"
+                className="rg-photo"
+              />
               <span>ROUNDGLASS / 01</span>
             </div>
+
             <div className="rg-image-placeholder">
+              <Image
+                src="/images/clients/roundglass/rg3.jpeg"
+                alt="Roundglass athlete coverage"
+                fill
+                sizes="(max-width: 900px) 50vw, 25vw"
+                className="rg-photo"
+              />
               <span>ATHLETE COVERAGE / 02</span>
             </div>
+
             <div className="rg-image-placeholder">
+              <Image
+                src="/images/clients/roundglass/rg4.jpeg"
+                alt="Roundglass sporting initiatives"
+                fill
+                sizes="(max-width: 900px) 50vw, 25vw"
+                className="rg-photo"
+              />
               <span>SPORTING INITIATIVES / 03</span>
             </div>
           </div>
@@ -125,7 +155,6 @@ export default function RoundglassSportsProject() {
           </div>
         </div>
       </section>
-
 
       {/* 02 / WHAT I LED */}
       <section className="rg-led section-pad">
@@ -149,7 +178,6 @@ export default function RoundglassSportsProject() {
         </div>
 
         <div className="rg-led-grid">
-
           <article className="rg-led-item">
             <span>01</span>
             <h3>Social Media Strategy</h3>
@@ -208,25 +236,28 @@ export default function RoundglassSportsProject() {
               publishing.
             </p>
           </article>
-
         </div>
 
         <div className="rg-work-gallery">
-          <div className="rg-image-placeholder">
-            <span>TENNIS / 01</span>
-          </div>
-          <div className="rg-image-placeholder">
-            <span>GOLF / 02</span>
-          </div>
-          <div className="rg-image-placeholder">
-            <span>HOCKEY / 03</span>
-          </div>
-          <div className="rg-image-placeholder">
-            <span>ATHLETE STORIES / 04</span>
-          </div>
+          {[
+            { src: "rg5.jpeg", alt: "Tennis coverage", label: "TENNIS / 01" },
+            { src: "rg6.jpeg", alt: "Golf coverage", label: "GOLF / 02" },
+            { src: "rg7.jpeg", alt: "Hockey coverage", label: "HOCKEY / 03" },
+            { src: "rg8.jpeg", alt: "Athlete stories", label: "ATHLETE STORIES / 04" },
+          ].map((item) => (
+            <div className="rg-image-placeholder" key={item.src}>
+              <Image
+                src={`/images/clients/roundglass/${item.src}`}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 900px) 50vw, 25vw"
+                className="rg-photo"
+              />
+              <span>{item.label}</span>
+            </div>
+          ))}
         </div>
       </section>
-
 
       {/* 03 / FEATURED PROJECT */}
       <section className="rg-featured section-pad">
@@ -303,12 +334,35 @@ export default function RoundglassSportsProject() {
 
           <div className="rg-featured-gallery">
             <div className="rg-image-placeholder rg-featured-main-image">
+              <Image
+                src="/images/clients/roundglass/rg9.jpeg"
+                alt="Punjab Hockey League"
+                fill
+                sizes="(max-width: 900px) 100vw, 55vw"
+                className="rg-photo"
+              />
               <span>PUNJAB HOCKEY LEAGUE / 01</span>
             </div>
+
             <div className="rg-image-placeholder">
+              <Image
+                src="/images/clients/roundglass/rg10.jpeg"
+                alt="Punjab Hockey League tournament"
+                fill
+                sizes="(max-width: 900px) 50vw, 25vw"
+                className="rg-photo"
+              />
               <span>TOURNAMENT / 02</span>
             </div>
+
             <div className="rg-image-placeholder">
+              <Image
+                src="/images/clients/roundglass/rg11.jpeg"
+                alt="Punjab Hockey League exhibition match"
+                fill
+                sizes="(max-width: 900px) 50vw, 25vw"
+                className="rg-photo"
+              />
               <span>EXHIBITION MATCH / 03</span>
             </div>
           </div>
@@ -353,18 +407,24 @@ export default function RoundglassSportsProject() {
         </div>
 
         <div className="rg-featured-gallery-bottom">
-          <div className="rg-image-placeholder">
-            <span>MATCH COVERAGE / 04</span>
-          </div>
-          <div className="rg-image-placeholder">
-            <span>PLAYER MOMENTS / 05</span>
-          </div>
-          <div className="rg-image-placeholder">
-            <span>LEAGUE ACTIVITIES / 06</span>
-          </div>
+          {[
+            { src: "rg12.jpeg", alt: "Punjab Hockey League match coverage", label: "MATCH COVERAGE / 04" },
+            { src: "rg13.jpeg", alt: "Punjab Hockey League player moments", label: "PLAYER MOMENTS / 05" },
+            { src: "rg14.jpeg", alt: "Punjab Hockey League activities", label: "LEAGUE ACTIVITIES / 06" },
+          ].map((item) => (
+            <div className="rg-image-placeholder" key={item.src}>
+              <Image
+                src={`/images/clients/roundglass/${item.src}`}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="rg-photo"
+              />
+              <span>{item.label}</span>
+            </div>
+          ))}
         </div>
       </section>
-
 
       {/* 04 / PERFORMANCE */}
       <section className="rg-results section-pad">
@@ -407,14 +467,28 @@ export default function RoundglassSportsProject() {
 
         <div className="rg-results-gallery">
           <div className="rg-image-placeholder">
+            <Image
+              src="/images/clients/roundglass/rg15.jpeg"
+              alt="Punjab Hockey League campaign insights"
+              fill
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="rg-photo"
+            />
             <span>CAMPAIGN INSIGHTS / 01</span>
           </div>
+
           <div className="rg-image-placeholder">
+            <Image
+              src="/images/clients/roundglass/rg16.jpeg"
+              alt="Punjab Hockey League performance analytics"
+              fill
+              sizes="(max-width: 640px) 100vw, 50vw"
+              className="rg-photo"
+            />
             <span>PERFORMANCE ANALYTICS / 02</span>
           </div>
         </div>
       </section>
-
 
       {/* FOOTER */}
       <footer className="rg-footer section-pad">

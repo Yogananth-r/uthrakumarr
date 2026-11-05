@@ -1,4 +1,6 @@
 
+
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 
@@ -55,6 +57,14 @@ export default function BharatRangersProject() {
         </div>
 
         <div className="br-hero-image">
+          <Image
+            src="/images/clients/br/br1.jpeg"
+            alt="Bharat Rangers VPL Season 2"
+            fill
+            priority
+            sizes="100vw"
+            className="br-photo"
+          />
           <span>BHARAT RANGERS / PROJECT VISUAL</span>
         </div>
       </section>
@@ -100,14 +110,34 @@ export default function BharatRangersProject() {
           </div>
 
           <div className="br-overview-gallery">
-            <div className="br-image-placeholder br-image-tall">
-              <span>BHARAT RANGERS / 01</span>
+            <div className="br-overview-item br-overview-tall">
+              <Image
+                src="/images/clients/br/br2.jpeg"
+                alt="Bharat Rangers tournament visual 01"
+                fill
+                sizes="(max-width: 900px) 90vw, 35vw"
+                className="br-photo"
+              />
             </div>
-            <div className="br-image-placeholder">
-              <span>BHARAT RANGERS / 02</span>
+
+            <div className="br-overview-item">
+              <Image
+                src="/images/clients/br/br3.jpeg"
+                alt="Bharat Rangers tournament visual 02"
+                fill
+                sizes="(max-width: 900px) 45vw, 20vw"
+                className="br-photo"
+              />
             </div>
-            <div className="br-image-placeholder">
-              <span>BHARAT RANGERS / 03</span>
+
+            <div className="br-overview-item">
+              <Image
+                src="/images/clients/br/br4.jpeg"
+                alt="Bharat Rangers tournament visual 03"
+                fill
+                sizes="(max-width: 900px) 45vw, 20vw"
+                className="br-photo"
+              />
             </div>
           </div>
         </div>
@@ -136,7 +166,6 @@ export default function BharatRangersProject() {
         </div>
 
         <div className="br-led-grid">
-
           <article className="br-led-item">
             <span>01</span>
             <h3>Live Match Coverage</h3>
@@ -184,21 +213,47 @@ export default function BharatRangersProject() {
               social media use.
             </p>
           </article>
-
         </div>
 
         <div className="br-work-gallery">
-          <div className="br-image-placeholder">
-            <span>ON-GROUND COVERAGE / 01</span>
+          <div className="br-work-item">
+            <Image
+              src="/images/clients/br/br5.jpeg"
+              alt="Bharat Rangers on-ground coverage 01"
+              fill
+              sizes="(max-width: 640px) 45vw, 22vw"
+              className="br-photo"
+            />
           </div>
-          <div className="br-image-placeholder">
-            <span>ON-GROUND COVERAGE / 02</span>
+
+          <div className="br-work-item">
+            <Image
+              src="/images/clients/br/br6.jpeg"
+              alt="Bharat Rangers on-ground coverage 02"
+              fill
+              sizes="(max-width: 640px) 45vw, 22vw"
+              className="br-photo"
+            />
           </div>
-          <div className="br-image-placeholder">
-            <span>CONTENT PRODUCTION / 03</span>
+
+          <div className="br-work-item">
+            <Image
+              src="/images/clients/br/br7.jpeg"
+              alt="Bharat Rangers content production 03"
+              fill
+              sizes="(max-width: 640px) 45vw, 22vw"
+              className="br-photo"
+            />
           </div>
-          <div className="br-image-placeholder">
-            <span>PLAYER CONTENT / 04</span>
+
+          <div className="br-work-item">
+            <Image
+              src="/images/clients/br/br8.jpeg"
+              alt="Bharat Rangers player content 04"
+              fill
+              sizes="(max-width: 640px) 45vw, 22vw"
+              className="br-photo"
+            />
           </div>
         </div>
       </section>
@@ -245,11 +300,24 @@ export default function BharatRangersProject() {
         </div>
 
         <div className="br-results-gallery">
-          <div className="br-image-placeholder">
-            <span>CAMPAIGN INSIGHTS / 01</span>
+          <div className="br-results-item">
+            <Image
+              src="/images/clients/br/br9.jpeg"
+              alt="Bharat Rangers campaign insights"
+              fill
+              sizes="(max-width: 640px) 90vw, 45vw"
+              className="br-photo"
+            />
           </div>
-          <div className="br-image-placeholder">
-            <span>PERFORMANCE ANALYTICS / 02</span>
+
+          <div className="br-results-item">
+            <Image
+              src="/images/clients/br/br10.jpeg"
+              alt="Bharat Rangers performance analytics"
+              fill
+              sizes="(max-width: 640px) 90vw, 45vw"
+              className="br-photo"
+            />
           </div>
         </div>
       </section>
