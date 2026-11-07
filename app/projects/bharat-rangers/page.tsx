@@ -263,7 +263,7 @@ export default function BharatRangersProject() {
       <section className="br-results section-pad">
         <div className="section-label">
           <span>03 / CAMPAIGN PERFORMANCE</span>
-          <span>VPL SEASON 2 / 01 JUN – 14 JUN 2026</span>
+          <span>VPL SEASON 2 / 01 FEB – 15 JUN 2026</span>
         </div>
 
         <div className="br-results-heading">
@@ -282,19 +282,19 @@ export default function BharatRangersProject() {
 
         <div className="br-metrics-grid">
           <div>
-            <strong>—</strong>
+            <strong>12M+</strong>
             <span>TOTAL IMPRESSIONS</span>
           </div>
           <div>
-            <strong>—</strong>
+            <strong>425K+</strong>
             <span>TOTAL ENGAGEMENT</span>
           </div>
           <div>
-            <strong>—</strong>
-            <span>VIDEO VIEWS</span>
+            <strong>5.2M+</strong>
+            <span>OVERALL REACH</span>
           </div>
           <div>
-            <strong>—</strong>
+            <strong>6K+</strong>
             <span>FOLLOWER INCREASE</span>
           </div>
         </div>

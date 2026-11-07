@@ -254,7 +254,7 @@ export default function SRFIProject() {
       <section className="srfi-results section-pad">
         <div className="section-label">
           <span>03 / CAMPAIGN PERFORMANCE</span>
-          <span>SDAT SQUASH WORLD CUP 2025 / SRFI</span>
+          <span>SRFI - APR - OCT 2026</span>
         </div>
 
         <div className="srfi-results-heading">
@@ -273,19 +273,19 @@ export default function SRFIProject() {
 
         <div className="srfi-metrics-grid">
           <div>
-            <strong>—</strong>
+            <strong>23M+</strong>
             <span>TOTAL IMPRESSIONS</span>
           </div>
           <div>
-            <strong>—</strong>
+            <strong>653.5K+</strong>
             <span>TOTAL ENGAGEMENT</span>
           </div>
           <div>
-            <strong>—</strong>
-            <span>VIDEO VIEWS</span>
+            <strong>5.2M+</strong>
+            <span>OVERALL REACH</span>
           </div>
           <div>
-            <strong>—</strong>
+            <strong>5K+</strong>
             <span>FOLLOWER INCREASE</span>
           </div>
         </div>

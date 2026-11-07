@@ -251,19 +251,19 @@ export default function FCMadrasProject() {
 
         <div className="fm-metrics-grid">
           <div>
-            <strong>—</strong>
+            <strong>25.5M+</strong>
             <span>TOTAL IMPRESSIONS</span>
           </div>
           <div>
-            <strong>—</strong>
+            <strong>1.3M+</strong>
             <span>TOTAL ENGAGEMENT</span>
           </div>
           <div>
-            <strong>—</strong>
-            <span>VIDEO VIEWS</span>
+            <strong>2.8M+</strong>
+            <span>OVERALL REACH</span>
           </div>
           <div>
-            <strong>—</strong>
+            <strong>30K+</strong>
             <span>FOLLOWER INCREASE</span>
           </div>
         </div>

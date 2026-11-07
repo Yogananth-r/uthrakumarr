@@ -448,20 +448,28 @@ export default function RoundglassSportsProject() {
 
         <div className="rg-metrics-grid">
           <div>
-            <strong>—</strong>
+            <strong>562</strong>
+            <span>TOTAL POST</span>
+          </div>
+          <div>
+            <strong>15.6M+</strong>
             <span>TOTAL IMPRESSIONS</span>
           </div>
           <div>
-            <strong>—</strong>
+            <strong>318K+</strong>
             <span>TOTAL ENGAGEMENT</span>
           </div>
           <div>
-            <strong>—</strong>
-            <span>VIDEO VIEWS</span>
+            <strong>1.4M+</strong>
+            <span>OVERALL REACH</span>
           </div>
           <div>
-            <strong>—</strong>
+            <strong>4K+</strong>
             <span>FOLLOWER INCREASE</span>
+          </div>
+          <div>
+            <strong>185K+</strong>
+            <span>PROFILE VISITS</span>
           </div>
         </div>
 
