@@ -2495,24 +2495,46 @@
 
 .srfi-image-placeholder {
   position: relative;
+  width: 100%;
   min-width: 0;
-  min-height: 180px;
+  min-height: 0;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: transparent;
-  border: 0;
-  display: flex;
-  align-items: flex-end;
-  padding: 13px;
+  border: none;
+  padding: 0;
+}
+
+.srfi-image-placeholder img {
+  object-fit: contain !important;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  transition: transform .5s ease, filter .5s ease;
+  filter: grayscale(100%);
+}
+
+.srfi-image-placeholder:hover img {
+  transform: scale(1.03);
+  filter: grayscale(0%);
 }
 
 .srfi-image-placeholder > span {
-  position: relative;
+  position: absolute;
   z-index: 2;
+  left: 12px;
+  bottom: 12px;
   font: 9px var(--mono);
   letter-spacing: .1em;
   color: #fff;
   text-shadow: 0 1px 5px rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 640px) {
+  .srfi-image-placeholder {
+    aspect-ratio: 4 / 3;
+  }
 }
 
 .srfi-image-tall {
@@ -2941,24 +2963,46 @@
 
 .rg-image-placeholder {
   position: relative;
+  width: 100%;
   min-width: 0;
-  min-height: 180px;
+  min-height: 0;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: transparent;
-  border: 0;
-  display: flex;
-  align-items: flex-end;
-  padding: 13px;
+  border: none;
+  padding: 0;
+}
+
+.rg-image-placeholder img {
+  object-fit: contain !important;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  filter: grayscale(100%);
+  transition: transform .5s ease, filter .5s ease;
+}
+
+.rg-image-placeholder:hover img {
+  transform: scale(1.03);
+  filter: grayscale(0%);
 }
 
 .rg-image-placeholder > span {
-  position: relative;
+  position: absolute;
   z-index: 2;
+  left: 12px;
+  bottom: 12px;
   font: 9px var(--mono);
   letter-spacing: .1em;
   color: #fff;
   text-shadow: 0 1px 5px rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 640px) {
+  .rg-image-placeholder {
+    aspect-ratio: 4 / 3;
+  }
 }
 
 .rg-image-tall {
@@ -3590,17 +3634,30 @@
 
 .dda-image {
   position: relative;
+  width: 100%;
   min-width: 0;
-  min-height: 180px;
+  min-height: 0;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  border: 0;
-  display: flex;
-  align-items: flex-end;
-  padding: 13px;
+  border: none;
   background: transparent;
+  padding: 0;
 }
 
+.dda-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center;
+  padding: 0;
+  filter: grayscale(100%);
+  transition: transform .5s ease, filter .5s ease;
+}
+
+.dda-image:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
 .dda-image-tall {
   grid-row: span 2;
   aspect-ratio: auto;

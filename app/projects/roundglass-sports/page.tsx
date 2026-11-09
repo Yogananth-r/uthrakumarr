@@ -472,30 +472,6 @@ export default function RoundglassSportsProject() {
             <span>PROFILE VISITS</span>
           </div>
         </div>
-
-        <div className="rg-results-gallery">
-          <div className="rg-image-placeholder">
-            <Image
-              src="/images/clients/roundglass/rg15.jpeg"
-              alt="Punjab Hockey League campaign insights"
-              fill
-              sizes="(max-width: 640px) 100vw, 50vw"
-              className="rg-photo"
-            />
-            <span>CAMPAIGN INSIGHTS / 01</span>
-          </div>
-
-          <div className="rg-image-placeholder">
-            <Image
-              src="/images/clients/roundglass/rg16.jpeg"
-              alt="Punjab Hockey League performance analytics"
-              fill
-              sizes="(max-width: 640px) 100vw, 50vw"
-              className="rg-photo"
-            />
-            <span>PERFORMANCE ANALYTICS / 02</span>
-          </div>
-        </div>
       </section>
 
       {/* FOOTER */}
