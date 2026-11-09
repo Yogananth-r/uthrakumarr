@@ -105,9 +105,9 @@ export default function FCMadrasProject() {
     <Image src="/images/clients/fcm/fcm-02.jpeg" alt="FC Madras 02" fill className="fm-gallery-photo" />
   </div>
 
-  <div className="fm-image-placeholder">
+  {/* <div className="fm-image-placeholder">
     <Image src="/images/clients/fcm/fcm-03.jpeg" alt="FC Madras 03" fill className="fm-gallery-photo" />
-  </div>
+  </div> */}
 
   <div className="fm-image-placeholder">
     <Image src="/images/clients/fcm/fcm-04.jpeg" alt="FC Madras 04" fill className="fm-gallery-photo" />
@@ -189,40 +189,40 @@ export default function FCMadrasProject() {
 
         </div>
 
-        <div className="fm-work-gallery">
-  <div className="fm-work-item">
+        <div className="br-work-gallery">
+  <div className="br-work-item">
     <Image
       src="/images/clients/fcm/fcm-05.jpeg"
       alt="FC Madras Match Coverage 01"
       fill
-      className="fm-gallery-photo"
+      className="br-photo"
     />
   </div>
 
-  <div className="fm-work-item">
+  <div className="br-work-item">
     <Image
       src="/images/clients/fcm/fcm-06.jpeg"
       alt="FC Madras Match Coverage 02"
       fill
-      className="fm-gallery-photo"
+      className="br-photo"
     />
   </div>
 
-  <div className="fm-work-item">
+  <div className="br-work-item">
     <Image
       src="/images/clients/fcm/fcm-07.jpeg"
       alt="FC Madras Match Coverage 03"
       fill
-      className="fm-gallery-photo"
+      className="br-photo"
     />
   </div>
 
-  <div className="fm-work-item">
+  <div className="br-work-item">
     <Image
       src="/images/clients/fcm/fcm-08.jpeg"
       alt="FC Madras Match Coverage 04"
       fill
-      className="fm-gallery-photo"
+      className="br-photo"
     />
   </div>
 </div>
