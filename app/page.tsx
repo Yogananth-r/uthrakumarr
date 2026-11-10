@@ -499,7 +499,9 @@ export default function Home() {
     <h3>
       ICC MEN’S CRICKET
       <br />
-      WORLD CUP 2023
+      WORLD CUP
+      <br />
+      2023
     </h3>
 
     <div className="metric-grid">
@@ -553,24 +555,24 @@ export default function Home() {
   <article className="case-card case-card--dark">
     <div className="case-top">
       <span>CASE STUDY / 03</span>
-      <span>PROJECT PERIOD</span>
+      <span>SEASON 2025</span>
     </div>
 
-    <p className="eyebrow">PROJECT / CLIENT NAME</p>
+    <p className="eyebrow">ROUNDGLASS SPORTS</p>
 
     <h3>
-      PROJECT
+      PUNJAB
       <br />
-      TITLE GOES
+      HOCKEY
       <br />
-      HERE.
+      LEAGUE 2025
     </h3>
 
     <div className="metric-grid">
-      <div><strong>---</strong><small>IMPRESSIONS</small></div>
-      <div><strong>---</strong><small>ENGAGEMENTS</small></div>
-      <div><strong>---</strong><small>VIDEO VIEWS</small></div>
-      <div><strong>---</strong><small>GROWTH</small></div>
+      <div><strong>15.6M+</strong><small>IMPRESSIONS</small></div>
+      <div><strong>318K+</strong><small>ENGAGEMENTS</small></div>
+      <div><strong>1.4M+</strong><small>OVERALL REACH</small></div>
+      <div><strong>4K+</strong><small>FOLLOWER INCREASE</small></div>
     </div>
 
     <div className="image-placeholder-row">
@@ -582,7 +584,7 @@ export default function Home() {
 
 
   {/* CASE STUDY 04 - PLACEHOLDER */}
-  <article className="case-card">
+    {/*<article className="case-card">
     <div className="case-top">
       <span>CASE STUDY / 04</span>
       <span>PROJECT PERIOD</span>
@@ -610,7 +612,7 @@ export default function Home() {
       <div>PROJECT IMAGE / 02</div>
       <div>PROJECT IMAGE / 03</div>
     </div>
-  </article>
+  </article>*/}
 
 </div>
         </section>

@@ -56,7 +56,7 @@ export default function DindigulAthleticsProject() {
 
         <div className="dda-hero-image">
           <Image
-            src="/images/clients/dindigul/hero.jpg"
+            src="/images/clients/dindigul/hero.jpeg"
             alt="40th Tamil Nadu Inter-District Junior Athletic Championship"
             fill
             priority
@@ -116,7 +116,7 @@ export default function DindigulAthleticsProject() {
           <div className="dda-overview-gallery">
             <div className="dda-image dda-image-tall">
               <Image
-                src="/images/clients/dindigul/overview-01.jpg"
+                src="/images/clients/dindigul/overview-01.jpeg"
                 alt="Athletes at the championship"
                 fill
                 sizes="(max-width: 700px) 45vw, 25vw"
@@ -126,7 +126,7 @@ export default function DindigulAthleticsProject() {
 
             <div className="dda-image">
               <Image
-                src="/images/clients/dindigul/overview-02.jpg"
+                src="/images/clients/dindigul/overview-02.jpeg"
                 alt="Track and field competition"
                 fill
                 sizes="(max-width: 700px) 45vw, 25vw"
@@ -136,7 +136,7 @@ export default function DindigulAthleticsProject() {
 
             <div className="dda-image">
               <Image
-                src="/images/clients/dindigul/overview-03.jpg"
+                src="/images/clients/dindigul/overview-03.jpeg"
                 alt="Athletes and event moments"
                 fill
                 sizes="(max-width: 700px) 45vw, 25vw"
@@ -234,7 +234,7 @@ export default function DindigulAthleticsProject() {
         <div className="dda-work-gallery">
           <div className="dda-image">
             <Image
-              src="/images/clients/dindigul/work-01.jpg"
+              src="/images/clients/dindigul/work-01.jpeg"
               alt="Championship venue and event preparation"
               fill
               sizes="(max-width: 700px) 50vw, 25vw"
@@ -244,7 +244,7 @@ export default function DindigulAthleticsProject() {
 
           <div className="dda-image">
             <Image
-              src="/images/clients/dindigul/work-02.jpg"
+              src="/images/clients/dindigul/work-02.jpeg"
               alt="Track and field event coverage"
               fill
               sizes="(max-width: 700px) 50vw, 25vw"
@@ -254,7 +254,7 @@ export default function DindigulAthleticsProject() {
 
           <div className="dda-image">
             <Image
-              src="/images/clients/dindigul/work-03.jpg"
+              src="/images/clients/dindigul/work-03.jpeg"
               alt="Athlete highlights"
               fill
               sizes="(max-width: 700px) 50vw, 25vw"
@@ -264,7 +264,7 @@ export default function DindigulAthleticsProject() {
 
           <div className="dda-image">
             <Image
-              src="/images/clients/dindigul/work-04.jpg"
+              src="/images/clients/dindigul/work-04.jpeg"
               alt="Championship highlights"
               fill
               sizes="(max-width: 700px) 50vw, 25vw"
@@ -297,8 +297,13 @@ export default function DindigulAthleticsProject() {
 
         <div className="dda-metrics-grid">
           <div>
-            <strong>5.1M+</strong>
+            <strong>1.9M+</strong>
             <span>TOTAL IMPRESSIONS</span>
+          </div>
+
+           <div>
+            <strong>17.5K+</strong>
+            <span>OVERALL REACH</span>
           </div>
 
           <div>
@@ -310,14 +315,9 @@ export default function DindigulAthleticsProject() {
             <strong>17.5K+</strong>
             <span>FOLLOWER INCREASE</span>
           </div>
-
-          <div>
-            <strong>18K</strong>
-            <span>TOTAL FOLLOWERS</span>
-          </div>
         </div>
 
-        <div className="dda-result-highlight">
+        {/* <div className="dda-result-highlight">
           <div>
             <span>KEY RESULT / AUDIENCE GROWTH</span>
             <strong>17K+</strong>
@@ -333,12 +333,12 @@ export default function DindigulAthleticsProject() {
             />
             <span>ACCOUNT GROWTH / INSIGHTS</span>
           </div>
-        </div>
+        </div>*/}
 
         <div className="dda-results-gallery">
           <div className="dda-image">
             <Image
-              src="/images/clients/dindigul/performance-02.jpg"
+              src="/images/clients/dindigul/performance-01.jpg"
               alt="Championship social media insights"
               fill
               sizes="(max-width: 700px) 100vw, 50vw"
